@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Page</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+        }
+        .container {
+            max-width: 1200px;
+            width: 100%;
+        }
+        header {
+            height: 3em;
+            background-color: rgb(69, 171, 163);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2em;
+            font-weight: bold;
+            color: white;
+        }
+        nav {
+            height: 3em;
+            background-color: rgb(133, 229, 221);
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            font-size: 1em;
+        }
+        .product-container {
+            display: flex;
+            gap: 20px;
+            margin: 2em 0;
+        }
+        .product-info {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 1em;
+            background-color: rgb(240, 240, 240);
+            border-radius: 10px;
+        }
+        .product-info h1 {
+            font-size: 1.5em;
+            margin-bottom: 0.5em;
+        }
+        .product-info p {
+            margin-bottom: 1em;
+            line-height: 1.5;
+        }
+        .product-info .price {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: rgb(69, 171, 163);
+        }
+        .product-image {
+            flex: 1;
+            background-color: rgb(220, 220, 220);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .product-image img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        .form-container {
+            margin-top: 2em;
+            margin-bottom: 15em;
+            padding: 1em;
+            background-color: rgb(245, 245, 245);
+            border-radius: 10px;
+        }
+        .form-container h2 {
+            margin-bottom: 1em;
+            font-size: 1.2em;
+        }
+        .form-container div {
+            margin-bottom: 0.5em;
+            
+        }
+        footer {
+
+            background-color: rgb(40, 117, 102);
+            height: 4em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            Хедер
+        </header>
+
+        <div class="product-container">
+            <div class="product-image">
+                <img src="" alt="Фото">
+            </div>
+            <div class="product-info">
+                <h1>Название товара</h1>
+                <p>Описание товара. </p>
+                <p class="price">Цена: ??? грн</p>
+            </div>
+        </div>
+
+        <div class="form-container">
+            <h2>Форма</h2>
+            <div>Поле: ____________________</div>
+            <div>Поле: ___________________</div>
+            <div>Поле: ______________</div>
+        </div>
+
+        <footer>
+            Футер
+        </footer>
+    </div>
+</body>
+</html>

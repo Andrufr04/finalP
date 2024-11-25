@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+        }
+        .container {
+            max-width: 1200px;
+            width: 100%;
+        }
+        header {
+            height: 3em;
+            background-color: rgb(69, 171, 163);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        menu {
+            height: 3em;
+            background-color: rgb(133, 229, 221);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .recl {
+            margin-top: 2em;
+            margin-bottom: 2em;
+            height: 25em;
+            border-radius: 1.2em;
+            background-color: rgb(10, 195, 180);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(10, 1fr); 
+            gap: 10px; 
+            margin-top: 1em;
+            margin-bottom: 1em;
+        }
+        .grid-item {
+            border-radius: 0.6em;
+            height: 140px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        .grid-item:nth-child(odd) {
+            background-color: rgb(184, 184, 184);
+        }
+        .grid-item:nth-child(even) {
+            background-color: rgb(122, 122, 122); 
+        }
+        .popular {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-top: 1em;
+        }
+        .pop {
+            width: 32.5%;
+            height: 15em;
+            background-color: rgb(120, 199, 196);
+            border-radius: 0.6em;
+        }
+
+        .gridCard{
+            display: grid;
+            grid-template-columns: repeat(5, 1fr); 
+            gap: 10px; 
+            margin-top: 1em;
+            margin-bottom: 1em;
+        }
+
+        .gridCard-item {
+            border-radius: 0.6em;
+            height: 21em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        .gridCard-item:nth-child(odd) {
+            background-color: rgb(184, 184, 184);
+        }
+        .gridCard-item:nth-child(even) {
+            background-color: rgb(122, 122, 122); 
+        }
+
+        footer{
+            margin-top: 10em;
+            background-color: rgb(40, 117, 102);
+            height: 26em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <header>
+            Logo Serch 
+        </header>
+        <menu>
+            Menu
+        </menu>
+        <div class="recl">
+            ad
+        </div>
+
+        <categories>
+            <p style="font-size: 1.6em; font-weight: 900;">All categories</p>
+            <div class="grid-container">
+                <div class="grid-item">1</div>
+                <div class="grid-item">2</div>
+                <div class="grid-item">3</div>
+                <div class="grid-item">4</div>
+                <div class="grid-item">5</div>
+                <div class="grid-item">6</div>
+                <div class="grid-item">7</div>
+                <div class="grid-item">8</div>
+                <div class="grid-item">9</div>
+                <div class="grid-item">10</div>
+            </div>
+            <div class="popular">
+                <div class="pop"></div>
+                <div class="pop"></div>
+                <div class="pop"></div>
+            </div>
+        </categories>
+
+        <tovarcard>
+            <p style="font-size: 1.6em; font-weight: 900;">Popular</p>
+            <div class="gridCard">
+                <div class="gridCard-item">1</div>
+                <div class="gridCard-item">2</div>
+                <div class="gridCard-item">3</div>
+                <div class="gridCard-item">4</div>
+                <div class="gridCard-item">5</div>
+                <div class="gridCard-item">6</div>
+                <div class="gridCard-item">7</div>
+                <div class="gridCard-item">8</div>
+                <div class="gridCard-item">9</div>
+                <div class="gridCard-item">10</div>
+            </div>
+        </tovarcard>
+
+
+        <footer>
+            footer
+        </footer>
+    </div>
+</body>
+</html>
