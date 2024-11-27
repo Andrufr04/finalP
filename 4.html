@@ -1,0 +1,79 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Выпадающий список</title> 
+    <style> 
+        body { 
+            font-family: Arial, sans-serif; 
+        } 
+ 
+        .city{ 
+            margin-bottom: 20px;
+            margin: 10px; 
+            font-size: 1.2em; 
+        } 
+        .dropdown { 
+            position: relative; 
+            display: inline-block; 
+        } 
+        .dropdown-content { 
+            display: none; 
+            position: absolute; 
+            background-color: #f9f9f9; 
+            border: 1px solid #ddd; 
+            padding: 10px; 
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+            z-index: 1; 
+            width: max-content; 
+        } 
+        .dropdown-content a { 
+            margin: 5px; 
+            text-decoration: none; 
+            color: black; 
+            padding: 5px 10px; 
+            display: inline-block; 
+        } 
+        .dropdown-content a:hover { 
+            color: rgb(66, 153, 175); 
+        } 
+        .dropdown:hover .dropdown-content { 
+            display: block; 
+        } 
+        .dropdown-content .row { 
+            display: flex; 
+            justify-content: space-between; 
+        } 
+        .text{
+            color: #a7a7a7;
+            font-size: 11px;
+            margin-top: 20px;
+        }
+    </style> 
+</head> 
+<body> 
+    <div class="dropdown"> 
+        <span>Город</span> 
+        <div class="dropdown-content"> 
+            <div class="city">Ваш город: <b>Одесса</b></div> 
+            <div class="row"> 
+                <a href="#kyiv">Киев</a> 
+                <a href="#lviv">Львов</a> 
+                <a href="#odessa">Одесса</a> 
+            </div> 
+            <div class="row"> 
+                <a href="#kharkiv">Харьков</a> 
+                <a href="#dnipro">Днепр</a> 
+                <a href="#vinnytsia">Винница</a> 
+            </div> 
+            <div class="row"> 
+                <a href="#cherkasy">Черкассы</a> 
+                <a href="#ternopil">Тернополь</a> 
+                <a href="#uzhhorod">Ужгород</a> 
+            </div> 
+            <div class="text">Mы за вами не следим, так будет проще заказывать тавары</div>
+        </div> 
+    </div> 
+</body> 
+</html>
